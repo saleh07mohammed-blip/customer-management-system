@@ -1,18 +1,20 @@
 # نظام إدارة العملاء
 # Customer Management System
 
-from src.admin_panel import AdminPanel
-
-def main():
-    print("🚀 بدء تشغيل نظام إدارة العملاء...")
-    
-    # اختبار واجهة المدير
-    try:
-        app = AdminPanel()
-        app.run()
-    except Exception as e:
-        print(f"❌ خطأ في التشغيل: {e}")
-        input("اضغط Enter للإغلاق...")
+def show_welcome():
+    print("=" * 50)
+    print("🎉 نظام إدارة العملاء جاهز للتطوير!")
+    print("=" * 50)
+    print()
+    print("✅ المميزات المتوفرة:")
+    print("   • قاعدة بيانات العملاء")
+    print("   • واجهة المدير الكاملة")
+    print("   • نظام إدارة المواعيد")
+    print("   • تنبيهات الصيانة الدورية")
+    print()
+    print("📁 لاختبار النظام، شغل test_system.py")
+    print("👤 لواجهة المدير، شغل src/admin_panel.py")
+    print("=" * 50)
 
 if __name__ == "__main__":
-    main()
+    show_welcome()
